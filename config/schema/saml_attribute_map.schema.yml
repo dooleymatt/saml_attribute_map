@@ -1,0 +1,24 @@
+saml_attribute_map.saml_attribute_map.*:
+  type: config_entity
+  label: 'Saml attribute map config'
+  mapping:
+    id:
+      type: string
+      label: 'ID'
+    label:
+      type: label
+      label: 'Label'
+    uuid:
+      type: string
+    user_field:
+      type: string
+      label: 'User account field'
+    saml_attribute:
+      type: string
+      label: 'SimpleSAMLphp attribute name'
+    enable_default_attribute:
+      type: boolean
+      label: 'Default enabled'
+    saml_attribute_default:
+      type: string
+      label: 'SimpleSAMLphp attribute default value'

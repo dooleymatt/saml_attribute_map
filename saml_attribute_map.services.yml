@@ -1,0 +1,4 @@
+services:
+  saml_attribute_map.attribute_manager:
+    class: Drupal\saml_attribute_map\Service\SamlAttributeManager
+    arguments: ['@entity_type.manager', '@current_user']

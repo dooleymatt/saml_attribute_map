@@ -1,0 +1,40 @@
+<?php
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\user\UserInterface;
+
+/**
+ * Implements hook_help().
+ */
+function saml_attribute_map_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the saml_attribute_map module.
+    case 'help.page.saml_attribute_map':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Maps simplesamlphp attributes to user account fields.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function saml_attribute_map_theme() {
+  return [
+    'saml_attribute_map' => [
+      'template' => 'saml_attribute_map',
+      'render element' => 'children',
+    ],
+  ];
+}
+
+/**
+ * Implements hook_simplesamlphp_auth_user_attributes().
+ */
+function saml_attribute_map_simplesamlphp_auth_user_attributes(UserInterface $account, $attributes) {
+  return \Drupal::service('saml_attribute_map.attribute_manager')->mapAttributes($attributes);
+}
+

@@ -1,0 +1,8 @@
+
+# Saml attribute map menu items definition
+entity.saml_attribute_map.collection:
+  route_name: entity.saml_attribute_map.collection
+  parent_id: simplesamlphp_auth.admin_settings_tab
+  title: 'Attribute mappings'
+  weight: 99
+

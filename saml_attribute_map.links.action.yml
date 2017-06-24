@@ -1,0 +1,6 @@
+entity.saml_attribute_map.add_form:
+  route_name: 'entity.saml_attribute_map.add_form'
+  title: 'Add an attribute mapping'
+  appears_on:
+    - entity.saml_attribute_map.collection
+

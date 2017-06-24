@@ -1,0 +1,14 @@
+{
+  "name": "drupal/saml_attribute_map",
+  "type": "drupal-module",
+  "description": "Maps simplesamlphp attributes to user account fields.",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/saml_attribute_map",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/saml_attribute_map",
+    "source": "http://cgit.drupalcode.org/saml_attribute_map"
+  },
+  "require": { }
+}

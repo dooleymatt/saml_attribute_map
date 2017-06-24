@@ -1,0 +1,5 @@
+name: SAML Attribute Map
+type: module
+description: Maps simplesamlphp attributes to user account fields.
+core: 8.x
+package: 'SAML Attribute Map'
